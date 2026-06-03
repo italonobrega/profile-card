@@ -22,21 +22,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #000;
+        background: #121212; /* Fundo levemente mais suave que o preto puro */
         padding: 20px;
       }
 
       .card {
         width: 100%;
         max-width: 620px;
-        background: #f5f5f5;
+        background: #f8f9fa;
         padding: 50px;
-        border-radius: 22px;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Sombra para dar destaque */
       }
 
       .avatar {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         background: #c8c2f0;
         color: #433a91;
@@ -47,6 +48,8 @@
         align-items: center;
         margin: 0 auto 25px;
         overflow: hidden;
+        border: 4px solid #fff; /* Borda branca ao redor do avatar */
+        box-shadow: 0 8px 20px rgba(67, 58, 145, 0.2);
       }
 
       .avatar img {
@@ -57,89 +60,39 @@
 
       h1 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-bottom: 8px;
-        color: #111;
+        color: #1a1a1a;
       }
 
       .cargo {
         text-align: center;
-        font-size: 1.3rem;
-        color: #555;
+        font-size: 1.1rem;
+        color: #666;
         margin-bottom: 30px;
+        font-weight: 500;
       }
 
       .bio {
-        background: #eceae4;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
         padding: 25px;
         border-radius: 16px;
         text-align: left;
-        color: #555;
+        color: #444;
         font-size: 1.1rem;
-        line-height: 1.8;
+        line-height: 1.7;
         margin: 35px 0;
-      }
-
-      .stats {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 35px;
-      }
-
-      .stat h2 {
-        font-size: 2rem;
-        color: #111;
-      }
-
-      .stat-num {
-        display: block;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #111;
-      }
-
-      .stat p {
-        color: #555;
-        margin-top: 5px;
-      }
-
-      hr {
-        border: none;
-        height: 1px;
-        background: #d9d9d9;
-        margin-bottom: 35px;
-      }
-
-      .social {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .social a {
-        text-decoration: none;
-        color: #222;
-        border: 2px solid #cfcfcf;
-        border-radius: 15px;
-        padding: 14px 24px;
-        font-size: 1.1rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        transition: 0.3s;
-      }
-
-      .social a i {
-        font-size: 1.4rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.02);
       }
 
       .section-title {
         text-align: left;
-        color: #777;
-        font-size: 1.4rem;
-        margin-bottom: 20px;
-        letter-spacing: 1px;
+        color: #888;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        letter-spacing: 1.5px;
       }
 
       .skills {
@@ -150,18 +103,20 @@
       }
 
       .skill {
-        background: #eceae4;
-        border: 2px solid #d6d3cb;
-        padding: 12px 18px;
-        border-radius: 14px;
-        font-size: 1.1rem;
+        background: #ffffff;
+        border: 1px solid #d6d3cb;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-size: 1.05rem;
         display: flex;
         gap: 8px;
         align-items: center;
+        color: #333;
+        transition: all 0.3s ease;
       }
 
-      .social a:hover {
-        background: #e8e8e8;
+      .skill:hover {
+        background: #f0f0f0;
         transform: translateY(-2px);
       }
 
@@ -173,17 +128,41 @@
 
       .github-card {
         flex: 1;
-        background: #eceae4;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
         border-radius: 16px;
-        padding: 30px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .github-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
       }
 
       .github-number {
         display: block;
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: bold;
-        margin-bottom: 10px;
+        color: #433a91; /* Cor combinando com o tema do avatar */
+        margin-bottom: 5px;
       }
+
+      .github-card p {
+        color: #666;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background: #e0e0e0;
+        margin-bottom: 35px;
+      }
+
       .social {
         display: flex;
         flex-wrap: wrap;
@@ -192,48 +171,60 @@
       }
 
       .social a {
-        min-width: 160px;
+        text-decoration: none;
+        color: #333;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        border-radius: 12px;
+        padding: 14px 24px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 150px;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
       }
 
-      .btn-whatsapp {
-        background: #25d366;
-        color: white !important;
-        border: none !important;
+      .social a:hover {
+        background: #f4f4f4;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      .social a.btn-whatsapp {
+        background: #25d366 ;
+        color: white;
+        border: none;
+      }
+
+      .social a.btn-whatsapp:hover {
+        background: #20bd5a;
       }
 
       @media (max-width: 480px) {
         .card {
           padding: 30px 20px;
         }
-
         .avatar {
           width: 110px;
           height: 110px;
           font-size: 2.5rem;
         }
-
         h1 {
-          font-size: 1.7rem;
+          font-size: 1.8rem;
         }
-
-        .cargo {
-          font-size: 1.1rem;
-        }
-
-        .stats {
+        .github-stats {
+          flex-direction: column;
           gap: 15px;
         }
-
-        .stat h2 {
-          font-size: 1.6rem;
-        }
-
         .social {
           flex-direction: column;
         }
-
         .social a {
-          justify-content: center;
+          width: 100%;
         }
       }
     </style>
@@ -249,31 +240,23 @@
       <p class="cargo">Desenvolvedor Front-end • Recife, PE</p>
 
       <p class="bio">
-        Faço sites e landing pages pra pequenos negócios. Foco em design limpo e
-        resultado real.
+        Faço sites e landing pages pra pequenos negócios. Foco em design limpo e resultado real.
       </p>
 
       <div class="section-title">SKILLS</div>
 
       <div class="skills">
         <span class="skill">
-          <i class="fa-brands fa-html5"></i>
-          HTML
+          <i class="fa-brands fa-html5"></i> HTML
         </span>
-
         <span class="skill">
-          <i class="fa-brands fa-css3-alt"></i>
-          CSS
+          <i class="fa-brands fa-css3-alt"></i> CSS
         </span>
-
         <span class="skill">
-          <i class="fa-brands fa-js"></i>
-          JavaScript
+          <i class="fa-brands fa-js"></i> JavaScript
         </span>
-
         <span class="skill">
-          <i class="fa-brands fa-git-alt"></i>
-          Git
+          <i class="fa-brands fa-git-alt"></i> Git
         </span>
       </div>
 
@@ -295,34 +278,34 @@
 
       <div class="social">
         <a href="#" class="btn-whatsapp">
-          <i class="fa-brands fa-whatsapp"></i>
-          WhatsApp
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
         </a>
-
-        <a href="#">
-          <i class="fa-brands fa-github"></i>
-          GitHub
+        <a href="https://github.com/italonobrega" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> GitHub
         </a>
-
         <a href="#">
-          <i class="fa-solid fa-envelope"></i>
-          Email
+          <i class="fa-solid fa-envelope"></i> Email
         </a>
       </div>
     </div>
+
     <script>
-      const usuarioGithub = "italonobrega"; // troque pelo seu usuário
+      const usuarioGithub = "italonobrega"; 
 
+      // Busca dados púlicos do usuário na API do GitHub
       fetch(`https://api.github.com/users/${usuarioGithub}`)
-        .then((response) => response.json())
-        .then((data) => {
+        .then(response => {
+          if (!response.ok) throw new Error('Erro na requisição');
+          return response.json();
+        })
+        .then(data => {
           document.getElementById("repos").textContent = data.public_repos;
-
           document.getElementById("seguidores").textContent = data.followers;
         })
-        .catch(() => {
-          document.getElementById("repos").textContent = "?";
-          document.getElementById("seguidores").textContent = "?";
+        .catch(error => {
+          console.error("Erro ao carregar dados:", error);
+          document.getElementById("repos").textContent = "!";
+          document.getElementById("seguidores").textContent = "!";
         });
     </script>
   </body>
