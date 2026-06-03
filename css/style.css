@@ -10,7 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #121212; /* Fundo levemente mais suave que o preto puro */
+        background: linear-gradient(135deg, #3E2723 0%, #150a06 100%); /* Fundo levemente mais suave que o preto puro */
         padding: 20px;
       }
 
