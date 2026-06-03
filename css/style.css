@@ -1,0 +1,217 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #121212; /* Fundo levemente mais suave que o preto puro */
+        padding: 20px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 620px;
+        background: #f8f9fa;
+        padding: 50px;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Sombra para dar destaque */
+      }
+
+      .avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: #c8c2f0;
+        color: #433a91;
+        font-size: 3rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 25px;
+        overflow: hidden;
+        border: 4px solid #fff; /* Borda branca ao redor do avatar */
+        box-shadow: 0 8px 20px rgba(67, 58, 145, 0.2);
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+        color: #1a1a1a;
+      }
+
+      .cargo {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .bio {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        padding: 25px;
+        border-radius: 16px;
+        text-align: left;
+        color: #444;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin: 35px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+      }
+
+      .section-title {
+        text-align: left;
+        color: #888;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        letter-spacing: 1.5px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+      .skill {
+        background: #ffffff;
+        border: 1px solid #d6d3cb;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-size: 1.05rem;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: #333;
+        transition: all 0.3s ease;
+      }
+
+      .skill:hover {
+        background: #f0f0f0;
+        transform: translateY(-2px);
+      }
+
+      .github-stats {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+
+      .github-card {
+        flex: 1;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 16px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .github-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      }
+
+      .github-number {
+        display: block;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #433a91; /* Cor combinando com o tema do avatar */
+        margin-bottom: 5px;
+      }
+
+      .github-card p {
+        color: #666;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background: #e0e0e0;
+        margin-bottom: 35px;
+      }
+
+      .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social a {
+        text-decoration: none;
+        color: #333;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        border-radius: 12px;
+        padding: 14px 24px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 150px;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      }
+
+      .social a:hover {
+        background: #f4f4f4;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      .social a.btn-whatsapp {
+        background: #25d366 ;
+        color: white;
+        border: none;
+      }
+
+      .social a.btn-whatsapp:hover {
+        background: #20bd5a;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 30px 20px;
+        }
+        .avatar {
+          width: 110px;
+          height: 110px;
+          font-size: 2.5rem;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+        .github-stats {
+          flex-direction: column;
+          gap: 15px;
+        }
+        .social {
+          flex-direction: column;
+        }
+        .social a {
+          width: 100%;
+        }
+      }
